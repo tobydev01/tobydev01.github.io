@@ -68,6 +68,12 @@ input, select, textarea {
 
 /* Basic */
 
+		.video.fit video {
+			width: 100%;
+			height: auto;
+			display: block;
+		}	
+
 	@-ms-viewport {
 		width: device-width;
 	}
@@ -2134,12 +2140,7 @@ input, select, textarea {
 		.button.fit {
 			width: 100%;
 		}
-
-		.video.fit video {
-			width: 100%;
-			height: auto;
-			display: block;
-		}		
+	
 
 		input[type="submit"].small,
 		input[type="reset"].small,
