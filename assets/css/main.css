@@ -3605,6 +3605,36 @@ input, select, textarea {
 		}
 
 /* Nav */
+	
+
+	#contributions .contributions-list {
+    	display: flex;
+    	flex-direction: column;
+    	gap: 2em;
+	}
+
+	#contributions .contribution {
+   	 	display: flex;
+    	flex-direction: row;
+    	border: 1px solid #ccc;
+    	padding: 1em;
+    	background-color: #f9f9f9;
+	}	
+
+	#contributions .contribution .image.fit {
+   	 	width: 40%;
+   	 	height: auto;
+	}
+
+	#contributions .contribution-details {
+    	width: 60%;
+    	padding-left: 1em;
+	}
+
+	#contributions .contribution-details h2 {
+    	margin-top: 0;
+	}
+
 
 	#nav {
 		color: #ffffff;

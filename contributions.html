@@ -1,0 +1,174 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>My Contributions - Toby's Portfolio</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <style>
+        .contributions-container {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .contributions-list {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+
+        .contribution {
+            min-width: 100%;
+            box-sizing: border-box;
+            padding: 1em;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .contribution .image.fit {
+            width: 40%;
+            height: auto;
+        }
+
+        .contribution-details {
+            width: 60%;
+            padding-left: 1em;
+        }
+
+        .contribution-details h2 {
+            margin-top: 0;
+        }
+
+        .arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 2em;
+            color: #007bff;
+            cursor: pointer;
+        }
+
+        .arrow-left {
+            left: 10px;
+        }
+
+        .arrow-right {
+            right: 10px;
+        }
+    </style>
+</head>
+<body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper" class="fade-in">
+        <!-- Header -->
+        <header id="header">
+            <a href="index.html" class="logo">Portfolio</a>
+        </header>
+        <!-- Nav -->
+        <nav id="nav">
+            <ul class="links">
+                <li><a href="index.html">My Portfolio</a></li>
+                <li><a href="commissions.html">My Recent Commissions</a></li>
+                <li class="active"><a href="contributions.html">My Contributions</a></li>
+            </ul>
+            <ul class="icons">
+                <li><a href="https://github.com/tobydev01" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+                <li><a href="https://discord.gg/gKspnDcQdt" class="icon brands fa-discord"><span class="label">Discord</span></a></li>
+            </ul>
+        </nav>
+        <!-- Main -->
+        <div id="main">
+            <section id="contributions">
+                <header class="major">
+                    <h2>My Contributions</h2>
+                </header>
+                <div class="contributions-container">
+                    <div class="contributions-list" id="contributions-list">
+                        <article class="contribution">
+                            <a href="#" class="image fit"><img src="images/bg.jpg" alt="Game Thumbnail" /></a>
+                            <div class="contribution-details">
+                                <h2>Game Title</h2>
+                                <p><strong>Views:</strong> 123,456</p>
+                                <p><strong>Description:</strong>detail</p>
+                                <a href="https://linktothegame.com" class="button">View Game</a>
+                            </div>
+                        </article>
+                        <!-- Add more articles as needed -->
+                        <article class="contribution">
+                            <a href="#" class="image fit"><img src="images/bg.jpg" alt="Game Thumbnail" /></a>
+                            <div class="contribution-details">
+                                <h2>Game Title</h2>
+                                <p><strong>Views:</strong> 123,456</p>
+                                <p><strong>Description:</strong> detail</p>
+                                <a href="https://linktothegame.com" class="button">View Game</a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="arrow arrow-left" id="prev">&laquo;</div>
+                    <div class="arrow arrow-right" id="next">&raquo;</div>
+                </div>
+            </section>
+        </div>
+        <!-- Footer -->
+        <footer id="footer">
+            <section class="split contact">
+                <section class="alt">
+                    <h3>Discord</h3>
+                    <p>Toby01</p>
+                </section>
+                <section>
+                    <h3>Discord Server</h3>
+                    <p><a href="https://discord.gg/gKspnDcQdt">Discord Server</a></p>
+                </section>
+                <section>
+                    <h3>Email</h3>
+                    <p><a href="#">tobyscomissions22@gmail.com</a></p>
+                </section>
+                <section>
+                    <h3>Social</h3>
+                    <ul class="icons alt">
+                        <li><a href="https://github.com/tobydev01" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+                    </ul>
+                </section>
+            </section>
+        </footer>
+        <!-- Copyright -->
+        <div id="copyright">
+            <ul>
+                <li>&copy; Toby's Portfolio</li>
+                <li>Toby01</li>
+            </ul>
+        </div>
+    </div>
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        let currentIndex = 0;
+
+        document.getElementById('next').addEventListener('click', function() {
+            const list = document.getElementById('contributions-list');
+            const items = list.children;
+            if (currentIndex < items.length - 1) {
+                currentIndex++;
+                list.style.transform = `translateX(-${currentIndex * 100}%)`;
+            }
+        });
+
+        document.getElementById('prev').addEventListener('click', function() {
+            const list = document.getElementById('contributions-list');
+            if (currentIndex > 0) {
+                currentIndex--;
+                list.style.transform = `translateX(-${currentIndex * 100}%)`;
+            }
+        });
+    </script>
+</body>
+</html>

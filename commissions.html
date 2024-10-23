@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <title>Toby's Portfolio</title>
+    <title>My Recent Commissions - Toby's Portfolio</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
@@ -10,14 +10,6 @@
 <body class="is-preload">
     <!-- Wrapper -->
     <div id="wrapper" class="fade-in">
-        <!-- Intro -->
-        <div id="intro">
-            <h1>Toby's Portfolio</h1>
-            <p>This is a showcase of all of my projects, a way for me to show you my abilities.</p>
-            <ul class="actions">
-                <li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-            </ul>
-        </div>
         <!-- Header -->
         <header id="header">
             <a href="index.html" class="logo">Portfolio</a>
@@ -25,8 +17,8 @@
         <!-- Nav -->
         <nav id="nav">
             <ul class="links">
-                <li class="active"><a href="index.html">My Portfolio</a></li>
-                <li><a href="commissions.html">My Recent Commissions</a></li>
+                <li><a href="index.html">My Portfolio</a></li>
+                <li class="active"><a href="commissions.html">My Recent Commissions</a></li>
                 <li><a href="contributions.html">My Contributions</a></li>
             </ul>
             <ul class="icons">
@@ -36,30 +28,26 @@
         </nav>
         <!-- Main -->
         <div id="main">
-            <!-- Featured Post -->
-            <article class="post featured">
+            <section id="commissions">
                 <header class="major">
-                    <h2><a href="#">My name is Toby</a></h2>
-                    <p>Hi, I'm Toby, a passionate developer with a strong interest in programming. I enjoy working on a variety of different projects, my experience includes working with languages like Java, JavaScript, Python, and LUA (Roblox).</p>
+                    <h2>My Recent Commissions</h2>
                 </header>
-                <a href="#" class="image fit"><img src="images/mainpic.jpg" alt="" /></a>
-            </article>
-            <!-- Posts -->
-            <section class="posts">
-                <article>
-                    <header>
-                        <h2><a href="#">Integrated Roblox Game and Discord Bot System</a></h2>
-                    </header>
-                    <a href="#" class="video fit"><video src="videos/integrateddiscordroblox.mp4" autoplay loop muted playsinline></video></a>
-                    <p>A fully-fledged system where a Roblox Game is integrated with a Discord Bot for real-time communication and game interactions, for example, notifications when you level up.</p>
-                </article>
-                <article>
-                    <header>
-                        <h2><a href="#">AI Integration</a></h2>
-                    </header>
-                    <a href="#" class="video fit"><video src="videos/aiassistantbot.mp4" autoplay loop muted playsinline></video></a>
-                    <p>A Discord bot that uses an AI API to generate accurate responses to questions asked by users</p>
-                </article>
+                <div class="commission-list">
+                    <article class="commission">
+                        <header>
+                            <h2>Commission Title</h2>
+                        </header>
+                        <div class="commission-content">
+                            <a href="#" class="image fit"><img src="images/commission-pic.jpg" alt="" /></a>
+                            <p><strong>Description:</strong> Detailed description of the work done, tools used, and the process.</p>
+                            <div class="testimonial">
+                                <p><strong>Customer Rating:</strong> ★★★★☆</p>
+                                <p><strong>Testimonial:</strong> "This is an example of what a happy customer might say about the work."</p>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Add more articles as needed -->
+                </div>
             </section>
         </div>
         <!-- Footer -->
