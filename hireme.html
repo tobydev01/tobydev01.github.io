@@ -170,7 +170,8 @@
                 .then((response) => {
                     console.log("SUCCESS!", response.status, response.text);
                     // Redirect to Discord server after successful submission
-                    window.location.href = "https://discord.gg/gKspnDcQdt";
+                    alert("SUCCESS!");
+                    // window.location.href = "https://discord.gg/gKspnDcQdt";
                 })
                 .catch((error) => {
                     console.error("FAILED...", error);
